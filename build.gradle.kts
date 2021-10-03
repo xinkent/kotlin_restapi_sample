@@ -37,3 +37,8 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+// Remove plain.jar rile
+tasks.getByName<Jar>("jar") {
+	enabled = false
+}
