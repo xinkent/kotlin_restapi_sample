@@ -4,6 +4,16 @@
 ```
 
 ## 開発環境起動
+環境変数`SPRING_PROFILES_ACTIVE`によって、利用するapplication.propertiesを変更する。
+### local環境
+8081ポートで起動
+IntellijのRunConfigurationで下記の環境変数を設定しておく。
+```
+SPRING_PROFILES_ACTIVE=local
+```
+
+### dokcer環境
+8080ポートで起動
 ```
 docker-compose up --build -d
 ```
